@@ -9,21 +9,134 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 
   <style type="text/css">
-    body {height: 100%; background: -moz-linear-gradient(top, #000, #00ffff) fixed;background: -webkit-linear-gradient(top, #000, #00ffff) fixed;background: linear-gradient(to bottom, #000, #00ffff) fixed}
-    div {text-align:center;}
+    body{
+      background:#00ffff;
+    }
+    .title{
+        text-align: center;
+        font-family: 'Press Start 2P', cursive;
+        margin: auto;
+    }
+    .parent{
+      border: 0px solid #aaa;
+      position: relative;
+      height: 450px;
+      width: 300px;
+      margin: auto;
+    }
+    .flame1{
+        background:#000;
+        border: 0px solid #aaa;
+        height: 60px;
+        margin: auto;
+    }
+    .flame2{
+        /*border: 1px solid #aaa;*/
+        border-top: 30px solid #000;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        margin: auto;
+    }
+    .flame3{
+        background:#000;
+        border: 0px solid #aaa;
+        height: 160px;
+        width: 260px;
+        padding-top: 20px;
+        margin: auto;
+    }
+    .screen{
+        background:#00ffff;
+        border: 0px solid #aaa;
+        border-radius: 10px;
+        height: 140px;
+        width: 220px;
+        margin: auto;
+    }
+    .flame4{
+      /*border: 1px solid #aaa;*/
+      border-bottom: 60px solid #000;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      margin: auto;
+    }
+    .flame5{
+        background:#000;
+        border: 0px solid #aaa;
+        height: 130px;
+        margin: auto;
+    }
+    /* PC */
+    @media (min-width: 768px) {
+      .title{
+        font-size: 200%;
+        color: #fff;
+        text-shadow:
+          1px 1px 1px #00ffff,
+          1px -1px 1px #00ffff,
+          -1px 1px 1px #00ffff,
+          -1px -1px 1px #00ffff,
+          0 0 30px #000;
+        padding : 60px 0px 40px 0px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .title{
+        font-size: 350%;
+        color: #fff;
+        text-shadow:
+          1px 1px 1px #00ffff,
+          1px -1px 1px #00ffff,
+          -1px 1px 1px #00ffff,
+          -1px -1px 1px #00ffff,
+          0 0 20px #000;
+        padding : 90px 0px 60px 0px;
+      }
+    }
+    /* SP */
+    @media (max-width: 767px) {
+      .title{
+        color: #fff;
+        text-shadow:
+          1px 1px 1px #00ffff,
+          1px -1px 1px #00ffff,
+          -1px 1px 1px #00ffff,
+          -1px -1px 1px #00ffff,
+          0 0 10px #000;
+        padding : 40px 0px 30px 0px;
+      }
+    }
   </style>
-
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
-
 <body>
   <script src="js/scripts.js"></script>
-  <div>
-  <img src="arcademachine5.png" width="300px" height="650px" alt="">
+  <div class="title">
+    murotani.github.io
+  </div>
+  <div class="parent">
+    <div class="flame1">
+    </div>
+    <div class="flame2">
+    </div>
+    <div class="flame3">
+      <div class="screen">
+        このサイトについて<br>
+        いろいろ<br>
+        いろいろ<br>
+        いろいろ
+      </div>
+    </div>
+    <div class="flame4">
+    </div>
+    <div class="flame5">
+    </div>
+  </div>
   </div>
 </body>
 </html>
