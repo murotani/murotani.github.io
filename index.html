@@ -3,20 +3,20 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>murotani.github.io</title>
   <meta name="description" content="The HTML5 Herald">
-  <!-- <meta name="author" content="SitePoint"> -->
   <meta name="viewport" content="width=device-width">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!-- test -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+  <!-- test -->
 
   <style type="text/css">
     body{
       background:#00ffff;
     }
-    /* pC */
+    /* PC */
     .title{
         text-align: center;
         color: #fff;
@@ -64,7 +64,6 @@
       }
     }
     .parent{
-      border: 0px solid #aaa;
       position: relative;
       height: 450px;
       width: 300px;
@@ -84,7 +83,6 @@
     }
     .flame3{
         background:#000;
-        border: 0px solid #aaa;
         height: 160px;
         width: 260px;
         padding-top: 20px;
@@ -92,52 +90,11 @@
     }
     .screen{
         background:#00ffff;
-        border: 0px solid #aaa;
         border-radius: 10px;
         height: 140px;
         width: 220px;
         margin: auto;
     }
-    /* Slide */
-    /*=== 画像の表示エリア ================================= */
-   .slide {
-     position   : relative;
-     overflow   : hidden;
-                       /* 画像のサイズに合わせて変更ください */
-     width      : 200px;
-     height     : 200px;
-     margin     : auto;      /* サンプルは中央寄せの背景：白 */
-     background : #fff;
-   }
-
-    /*=== 画像の設定 ======================================= */
-   .slide img {
-     display    : block;
-     position   : absolute;
-                         /* 画像のサイズを表示エリアに合せる */
-     width      : inherit;
-     height     : inherit;
-     opacity    : 0;
-     animation  : slideAnime 15s ease infinite;
-   }
-
-    /*=== スライドのアニメーションを段差で開始する ========= */
-   .slide img:nth-of-type(1) { animation-delay: 0s }
-   .slide img:nth-of-type(2) { animation-delay: 3s }
-   .slide img:nth-of-type(3) { animation-delay: 6s }
-   .slide img:nth-of-type(4) { animation-delay: 9s }
-   .slide img:nth-of-type(5) { animation-delay: 12s }
-
-    /*=== スライドのアニメーション ========================= */
-   @keyframes slideAnime{
-      0% { opacity: 0; transform: scale(.1, .1)}
-      2% { opacity: 1; transform: scale(1, 1)  }
-     18% { opacity: 1; transform: scale(1, 1)  }
-     20% { opacity: 0; transform: scale(2, 2)  }
-    100% { opacity: 0; transform: scale(2, 2)  }
-   }
-
-
     .flame4{
       border-bottom: 60px solid #000;
       border-left: 20px solid transparent;
@@ -302,16 +259,35 @@
     </div>
     <div class="flame2">
     </div>
-    <div class="flame3">
-      <div class="screen">
+    <div class="flame3" style="z-index: 5">
+      <div class="screen" style="z-index: 4">
+
+        <!-- Slider main container -->
+        <div class="swiper-container" style="height: 140px;width: 220px;z-index: 3;border-radius: 10px;">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" data-swiper-autoplay="2000" style="z-index: 2">
+                <!-- Slides -->
+                <div class="swiper-slide" style="z-index: 1"><a href=""><img src="1.png" alt="" style="height: 140px;width: 220px;"></a></div>
+                <div class="swiper-slide" style="z-index: 1"><a href=""><img src="1.png" alt="" style="height: 140px;width: 220px;"></a></div>
+                <div class="swiper-slide" style="z-index: 1"><a href=""><img src="1.png" alt="" style="height: 140px;width: 220px;"></a></div>
+                <div class="swiper-slide" style="z-index: 1"><a href=""><img src="1.png" alt="" style="height: 140px;width: 220px;"></a></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
       </div>
     </div>
-    <div class="flame4">
-       <div class="joystick1">
+    <div class="flame4" style="z-index: 6">
+       <div class="joystick1" style="z-index: 7">
        </div>
-       <div class="joystick3">
+       <div class="joystick3" style="z-index: 7">
        </div>
-       <div class="joystick2">
+       <div class="joystick2" style="z-index: 7">
        </div>
        <div class="button1">
        </div>
@@ -330,5 +306,17 @@
     </div>
   </div>
   </div>
+  <!-- Slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+	<script>
+		var mySwiper = new Swiper ('.swiper-container', {
+			effect: "slide",
+	    	loop: true,
+        autoplay: 5000,
+		    pagination: '.swiper-pagination',
+		    nextButton: '.swiper-button-next',
+		    prevButton: '.swiper-button-prev',
+	    })
+	</script>
 </body>
 </html>
