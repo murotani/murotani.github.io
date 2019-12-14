@@ -7,58 +7,115 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="viewport" content="width=device-width">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-  <!-- test -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
-  <!-- test -->
-
   <style type="text/css">
-    body{
-      background:#505834;
+    html {
+      height: 100%;
     }
     /* PC */
+    body{
+      /*background:#505834;*/
+      background: -moz-linear-gradient(top, #00FFFF, #333 30%);
+      background: -webkit-linear-gradient(top, #00FFFF, #333 30%);
+      background: linear-gradient(to bottom, #00FFFF, #333 30%);
+    }
     .title{
         text-align: center;
         color: #fff;
         font-family: 'Press Start 2P', cursive;
+        /*font-family: 'Monoton', cursive;*/
+        /*font-family: 'Allerta Stencil', sans-serif;*/
         margin: auto;
         font-size: 350%;
-        text-shadow:
-          1px 1px 1px #505834,
-          1px -1px 1px #505834,
-          -1px 1px 1px #505834,
-          -1px -1px 1px #505834,
-          0 0 20px #000;
+        /*text-shadow:
+          1px 1px 1px #000,
+          1px -1px 1px #000,
+          -1px 1px 1px #000,
+          -1px -1px 1px #000,
+          0 0 20px #000;*/
         padding : 120px 0px 90px 0px;
     }
+    #neon {
+        text-decoration: none;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+        -webkit-animation: neoneffects 1.5s ease-in-out infinite alternate;
+        -moz-animation: neoneffects 1.5s ease-in-out infinite alternate;
+        animation: neoneffects 1.5s ease-in-out infinite alternate;
+    }
+    @-webkit-keyframes neoneffects {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF, 0 0 100px #00FFFF, 0 0 150px #00FFFF;
+        }
+        to {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00FFFF, 0 0 35px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 75px #00FFFF;
+        }
+        }
+    @-moz-keyframes neoneffects {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF, 0 0 100px #00FFFF, 0 0 150px #00FFFF;
+        }
+        to {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00FFFF, 0 0 35px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 75px #00FFFF;
+        }
+        }
+    @keyframes neoneffects {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00FFFF, 0 0 70px #00FFFF, 0 0 80px #00FFFF, 0 0 100px #00FFFF, 0 0 150px #00FFFF;
+        }
+        to {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00FFFF, 0 0 35px #00FFFF, 0 0 40px #00FFFF, 0 0 50px #00FFFF, 0 0 75px #00FFFF;
+        }
+        }
     /* タブレット縦 */
     @media screen and (max-width: 1024px) {
+      body{
+        /*background:#505834;*/
+        background: -moz-linear-gradient(top, #00FFFF, #333 20%);
+        background: -webkit-linear-gradient(top, #00FFFF, #333 20%);
+        background: linear-gradient(to bottom, #00FFFF, #333 20%);
+      }
       .title{
         font-size: 200%;
-        text-shadow:
+        /*text-shadow:
           1px 1px 1px #505834,
           1px -1px 1px #505834,
           -1px 1px 1px #505834,
           -1px -1px 1px #505834,
-          0 0 30px #000;
+          0 0 30px #000;*/
         padding : 90px 0px 70px 0px;
       }
     }
     /* スマホ横 */
     @media screen and (max-width: 896px) {
+      body{
+        /*background:#505834;*/
+        background: -moz-linear-gradient(top, #00FFFF, #333 20%);
+        background: -webkit-linear-gradient(top, #00FFFF, #333 20%);
+        background: linear-gradient(to bottom, #00FFFF, #333 20%);
+      }
       .title{
         font-size: 150%;
-        text-shadow:
+        /*text-shadow:
           1px 1px 1px #505834,
           1px -1px 1px #505834,
           -1px 1px 1px #505834,
           -1px -1px 1px #505834,
-          0 0 10px #000;
+          0 0 10px #000;*/
         padding : 35px 0px 35px 0px;
       }
     }
     /* スマホ縦 */
     @media screen and (max-width: 480px) {
+      body{
+        /*background:#505834;*/
+        background: -moz-linear-gradient(top, #00FFFF, #333 10%);
+        background: -webkit-linear-gradient(top, #00FFFF, #333 10%);
+        background: linear-gradient(to bottom, #00FFFF, #333 10%);
+      }
       .title{
         font-size: 100%;
       }
@@ -97,6 +154,9 @@
         margin: auto;
     }
     */
+    .swiper-button-prev{
+
+    }
     .flame4{
       border-bottom: 55px solid #fff;
       border-left: 20px solid transparent;
@@ -241,9 +301,16 @@
       box-shadow: 0px 0px 0px #000;
     }
     .flame5{
-      border-top: 145px solid #ddd;
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent;
+      border-top: 50px solid #ddd;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      margin: auto;
+    }
+    .flame6{
+      width: 85%;
+      border-top: 95px solid #ccc;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
       margin: auto;
     }
   </style>
@@ -253,7 +320,7 @@
 </head>
 <body>
   <script src="js/scripts.js"></script>
-  <div class="title">
+  <div class="title" id="neon">
     murotani.github.io
   </div>
   <div class="parent">
@@ -275,11 +342,11 @@
                 <div class="swiper-slide" style="z-index: 1"><a href=""><img src="1.png" alt="" style="height: 140px;width: 220px;"></a></div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination swiper-pagination-white"></div>
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
         </div>
 
       </div>
@@ -305,6 +372,8 @@
        </div>
     </div>
     <div class="flame5">
+    </div>
+    <div class="flame6">
     </div>
   </div>
   </div>
