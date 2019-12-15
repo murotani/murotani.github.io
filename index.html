@@ -10,6 +10,7 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet"> -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+  <script src="https://kit.fontawesome.com/20a02784da.js" crossorigin="anonymous"></script>
   <style type="text/css">
     html {
       height: 100%;
@@ -17,9 +18,11 @@
     /* PC */
     body{
       /*background:#505834;*/
-      background: -moz-linear-gradient(top, #333, #111);
-      background: -webkit-linear-gradient(top, #333, #111);
-      background: linear-gradient(to bottom, #333, #111);
+      background: #666;
+    }
+    a{
+      text-decoration: none;
+      color: #fff;
     }
     .title{
         text-align: center;
@@ -136,8 +139,24 @@
         margin: auto;
     }
     */
-    .swiper-button-prev{
-
+    .display{
+      z-index: 1;
+      background: #333;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      color: #fff;
+      font-family: 'Press Start 2P', cursive;
+    }
+    .btn8bit{
+      transition: .4s;
+      padding: 10px;
+    }
+    .btn8bit:hover {
+      color: #00ff00;
     }
     .flame4{
       border-bottom: 55px solid #fff;
@@ -318,17 +337,40 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper" data-swiper-autoplay="2000" style="z-index: 2">
                 <!-- Slides -->
-                <div class="swiper-slide" style="z-index: 1"><a href=""><img src="1.png" alt="" style="height: 140px;width: 220px;"></a></div>
-                <div class="swiper-slide" style="z-index: 1"><a href=""><img src="1.png" alt="" style="height: 140px;width: 220px;"></a></div>
-                <div class="swiper-slide" style="z-index: 1"><a href=""><img src="1.png" alt="" style="height: 140px;width: 220px;"></a></div>
-                <div class="swiper-slide" style="z-index: 1"><a href=""><img src="1.png" alt="" style="height: 140px;width: 220px;"></a></div>
+                <!-- <div class="swiper-slide" style="z-index: 1"><a href=""><img src="1.png" alt="" style="height: 140px;width: 220px;"></a></div> -->
+                <!-- slide 1  -->
+                <div class="swiper-slide display">
+                  <div>
+                    <i class="fas fa-desktop fa-2x"></i><br>
+                  </div>
+                  <div style="margin-left: 5px;margin-right: 5px">
+                    <i class="fas fa-arrows-alt-h"></i><br>
+                    <i class="far fa-keyboard"></i>
+                  </div>
+                  <div style="margin-left: 15px;margin-right: 15px">
+                    or
+                  </div>
+                  <div>
+                    <i class="fas fa-mobile fa-2x"></i><br>
+                  </div>
+                  <div style="margin-left: 5px;margin-right: 5px">
+                    <i class="fas fa-arrows-alt-h"></i><br>
+                    <i class="far fa-hand-point-up"></i>
+                  </div>
+                </div>
+                <!-- slide 2  -->
+                <div class="swiper-slide display"><a href=""></a></div>
+                <!-- slide 3  -->
+                <div class="swiper-slide display"><a href=""></a></div>
+                <!-- slide 4  -->
+                <div class="swiper-slide display"><a href=""></a></div>
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination swiper-pagination-white"></div>
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev swiper-button-white"></div>
-            <div class="swiper-button-next swiper-button-white"></div>
+            <!-- <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div> -->
         </div>
 
       </div>
@@ -365,10 +407,12 @@
 		var mySwiper = new Swiper ('.swiper-container', {
 			effect: "slide",
 	    	loop: true,
+        keyboardControl: true,
+        mousewheelControl: true,
         autoplay: 5000,
 		    pagination: '.swiper-pagination',
-		    nextButton: '.swiper-button-next',
-		    prevButton: '.swiper-button-prev',
+		    //nextButton: '.swiper-button-next',
+		    //prevButton: '.swiper-button-prev',
 	    })
 	</script>
 </body>
