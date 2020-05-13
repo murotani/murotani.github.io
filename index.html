@@ -18,7 +18,7 @@
     /* PC */
     body{
       /*background:#505834;*/
-      background: #666;
+      background: #000133;
     }
     a{
       text-decoration: none;
@@ -26,12 +26,13 @@
     }
     .title{
         text-align: center;
-        color: #fff;
+        color: #000133;
         font-family: 'Press Start 2P', cursive;
         /*font-family: 'Monoton', cursive;*/
         /*font-family: 'Allerta Stencil', sans-serif;*/
         margin: auto;
-        font-size: 350%;
+        /*font-size: 350%;*/
+        font-size: 300%;
         /*text-shadow:
           1px 1px 1px #000,
           1px -1px 1px #000,
@@ -39,44 +40,17 @@
           -1px -1px 1px #000,
           0 0 20px #000;*/
         padding : 120px 0px 90px 0px;
+        text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
+
     }
-    #neon {
-        text-decoration: none;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        transition: all 0.5s;
-        -webkit-animation: neoneffects 5s ease-in-out infinite alternate;
-        -moz-animation: neoneffects 5s ease-in-out infinite alternate;
-        animation: neoneffects 5s ease-in-out infinite alternate;
-    }
-    @-webkit-keyframes neoneffects {
-        from {
-            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
-        }
-        to {
-            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00ff00, 0 0 35px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 75px #00ff00;
-        }
-        }
-    @-moz-keyframes neoneffects {
-        from {
-            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
-        }
-        to {
-            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00ff00, 0 0 35px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 75px #00ff00;
-        }
-        }
-    @keyframes neoneffects {
-        from {
-            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
-        }
-        to {
-            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00ff00, 0 0 35px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 75px #00ff00;
-        }
-        }
     /* タブレット縦 */
     @media screen and (max-width: 1024px) {
       .title{
-        font-size: 200%;
+        /*font-size: 200%;*/
+        font-size: 190%;
         /*text-shadow:
           1px 1px 1px #505834,
           1px -1px 1px #505834,
@@ -89,7 +63,8 @@
     /* スマホ横 */
     @media screen and (max-width: 896px) {
       .title{
-        font-size: 150%;
+        /*font-size: 150%;*/
+        font-size: 140%;
         /*text-shadow:
           1px 1px 1px #505834,
           1px -1px 1px #505834,
@@ -102,7 +77,8 @@
     /* スマホ縦 */
     @media screen and (max-width: 480px) {
       .title{
-        font-size: 100%;
+        /* font-size: 100%; */
+        font-size: 85%;
       }
     }
     .parent{
@@ -141,7 +117,7 @@
     */
     .display{
       z-index: 1;
-      background: #333;
+      background: #000;
       display: -webkit-flex;
       display: flex;
       -webkit-align-items: center;
@@ -165,26 +141,26 @@
       margin: auto;
     }
     .joystick1{
-      border: 3px solid #000;
+      border: 0px solid #000;
       background: #00ff00;
       width: 25px;
 	    height: 25px;
       border-radius: 50%;
       position:absolute;
-      top:  225px;
+      top:  237px;
       bottom:  0;
-      left:  65px;
+      left:  68px;
       right:  0;
     }
     .joystick2{
-      border: 3px solid #000;
-      background: #fff;
+      border: 0px solid #000;
+      background: #000;
       width: 5px;
-	    height: 25px;
+	    height: 20px;
       position:absolute;
-      top:  255px;
+      top:  258px;
       bottom:  0;
-      left:  75px;
+      left:  78px;
       right:  0;
     }
     .joystick3{
@@ -200,9 +176,9 @@
       right:  0;
     }
     .button1{
-      border: 3px solid #000;
+      border: 0px solid #000;
       background: #00ff00;
-      box-shadow: 0px 2px 0px #000;
+      box-shadow: 0px 2px 0px #00cc00;
       width: 25px;
 	    height: 10px;
       border-radius: 50%;
@@ -216,10 +192,22 @@
       top:  267px;
       box-shadow: 0px 0px 0px #000;
     }
-    .button2{
-      border: 3px solid #000;
+    .button1-ring{
+      border: 0px solid #000;
       background: #00ff00;
-      box-shadow: 0px 2px 0px #000;
+      width: 29px;
+	    height: 10px;
+      border-radius: 50%;
+      position:absolute;
+      top:  269px;
+      bottom:  0;
+      left:  138px;
+      right:  0;
+    }
+    .button2{
+      border: 0px solid #000;
+      background: #00ff00;
+      box-shadow: 0px 2px 0px #00cc00;
       width: 25px;
 	    height: 10px;
       border-radius: 50%;
@@ -233,10 +221,22 @@
       top:  262px;
       box-shadow: 0px 0px 0px #000;
     }
-    .button3{
-      border: 3px solid #000;
+    .button2-ring{
+      border: 0px solid #000;
       background: #00ff00;
-      box-shadow: 0px 2px 0px #000;
+      width: 29px;
+      height: 10px;
+      border-radius: 50%;
+      position:absolute;
+      top:  264px;
+      bottom:  0;
+      left:  178px;
+      right:  0;
+    }
+    .button3{
+      border: 0px solid #000;
+      background: #00ff00;
+      box-shadow: 0px 2px 0px #00cc00;
       width: 25px;
 	    height: 10px;
       border-radius: 50%;
@@ -250,10 +250,22 @@
       top:  262px;
       box-shadow: 0px 0px 0px #000;
     }
-    .button4{
-      border: 3px solid #000;
+    .button3-ring{
+      border: 0px solid #000;
       background: #00ff00;
-      box-shadow: 0px 2px 0px #000;
+      width: 29px;
+      height: 10px;
+      border-radius: 50%;
+      position:absolute;
+      top:  264px;
+      bottom:  0;
+      left:  218px;
+      right:  0;
+    }
+    .button4{
+      border: 0px solid #000;
+      background: #00ff00;
+      box-shadow: 0px 2px 0px #00cc00;
       width: 25px;
 	    height: 10px;
       border-radius: 50%;
@@ -267,10 +279,22 @@
       top:  292px;
       box-shadow: 0px 0px 0px #000;
     }
-    .button5{
-      border: 3px solid #000;
+    .button4-ring{
+      border: 0px solid #000;
       background: #00ff00;
-      box-shadow: 0px 2px 0px #000;
+      width: 29px;
+      height: 10px;
+      border-radius: 50%;
+      position:absolute;
+      top:  294px;
+      bottom:  0;
+      left:  138px;
+      right:  0;
+    }
+    .button5{
+      border: 0px solid #000;
+      background: #00ff00;
+      box-shadow: 0px 2px 0px #00cc00;
       width: 25px;
 	    height: 10px;
       border-radius: 50%;
@@ -284,10 +308,22 @@
       top:  287px;
       box-shadow: 0px 0px 0px #000;
     }
-    .button6{
-      border: 3px solid #000;
+    .button5-ring{
+      border: 0px solid #000;
       background: #00ff00;
-      box-shadow: 0px 2px 0px #000;
+      width: 29px;
+      height: 10px;
+      border-radius: 50%;
+      position:absolute;
+      top:  289px;
+      bottom:  0;
+      left:  178px;
+      right:  0;
+    }
+    .button6{
+      border: 0px solid #000;
+      background: #00ff00;
+      box-shadow: 0px 2px 0px #00cc00;
       width: 25px;
 	    height: 10px;
       border-radius: 50%;
@@ -300,6 +336,18 @@
     .button6:active{
       top:  287px;
       box-shadow: 0px 0px 0px #000;
+    }
+    .button6-ring{
+      border: 0px solid #000;
+      background: #00ff00;
+      width: 29px;
+      height: 10px;
+      border-radius: 50%;
+      position:absolute;
+      top:  289px;
+      bottom:  0;
+      left:  218px;
+      right:  0;
     }
     .flame5{
       border-top: 50px solid #ddd;
@@ -321,8 +369,10 @@
 </head>
 <body>
   <script src="js/scripts.js"></script>
-  <div class="title" id="neon">
-    murotani.github.io
+  <div class="title">
+    <!-- murotani.github.io -->
+    <!-- <span style="color: #fff;">E</span>LEVATOR<span style="color: #fff;">B</span>OYS<span style="color: #fff;">H</span>OMEWORK -->
+    ELEVATORBOYSHOMEWORK
   </div>
   <div class="parent">
     <div class="flame1">
@@ -340,7 +390,7 @@
                 <!-- <div class="swiper-slide" style="z-index: 1"><a href=""><img src="1.png" alt="" style="height: 140px;width: 220px;"></a></div> -->
                 <!-- slide 1  -->
                 <div class="swiper-slide display">
-                  <div>
+                  <!--<div>
                     <i class="fas fa-desktop fa-2x"></i><br>
                   </div>
                   <div style="margin-left: 5px;margin-right: 5px">
@@ -351,12 +401,12 @@
                     or
                   </div>
                   <div>
-                    <i class="fas fa-mobile fa-2x"></i><br>
+                    <i class="fa fa-mobile fa-2x"></i><br>
                   </div>
                   <div style="margin-left: 5px;margin-right: 5px">
                     <i class="fas fa-arrows-alt-h"></i><br>
                     <i class="far fa-hand-point-up"></i>
-                  </div>
+                  </div>-->
                 </div>
                 <!-- slide 2  -->
                 <div class="swiper-slide display"><a href=""></a></div>
@@ -376,23 +426,35 @@
       </div>
     </div>
     <div class="flame4" style="z-index: 6">
-       <div class="joystick1" style="z-index: 7">
+       <div class="joystick1" style="z-index: 9">
        </div>
-       <div class="joystick3" style="z-index: 7">
+       <div class="joystick3" style="z-index: 8">
        </div>
        <div class="joystick2" style="z-index: 7">
        </div>
-       <div class="button1">
+       <div class="button1" style="z-index: 11">
        </div>
-       <div class="button2">
+       <div class="button1-ring" style="z-index: 1">
        </div>
-       <div class="button3">
+       <div class="button2" style="z-index: 12">
        </div>
-       <div class="button4">
+       <div class="button2-ring" style="z-index: 2">
        </div>
-       <div class="button5">
+       <div class="button3" style="z-index: 13">
        </div>
-       <div class="button6">
+       <div class="button3-ring" style="z-index: 3">
+       </div>
+       <div class="button4" style="z-index: 14">
+       </div>
+       <div class="button4-ring" style="z-index: 4">
+       </div>
+       <div class="button5" style="z-index: 15">
+       </div>
+       <div class="button5-ring" style="z-index: 5">
+       </div>
+       <div class="button6" style="z-index: 16">
+       </div>
+       <div class="button6-ring" style="z-index: 6">
        </div>
     </div>
     <div class="flame5">
@@ -415,5 +477,85 @@
 		    //prevButton: '.swiper-button-prev',
 	    })
 	</script>
+
+<!--
+  <div>
+    <a href="" target="_blank">
+      On desktop PCs,
+      <span class="fa-stack">
+      　<i class="far fa-stack-2x fa-square"></i>
+      　<i class="fa fa-stack-1x fa-desktop fa-inverse"></i>
+      </span>
+      The right keys
+      <span class="fa-stack">
+      　<i class="far fa-stack-2x fa-square"></i>
+      　<i class="fa fa-stack-1x fa-arrow-left"></i>
+      </span>
+      and left keys
+      <span class="fa-stack">
+      　<i class="far fa-stack-2x fa-square"></i>
+      　<i class="fa fa-stack-1x fa-arrow-right"></i>
+      </span>
+      move the slide.
+    </a>
+  </div>
+
+  <div>
+    <a href="" target="_blank">
+      On smartphones,
+      <span class="fa-stack">
+      　<i class="far fa-stack-2x fa-square"></i>
+      　<i class="fa fa-stack-1x fa-mobile fa-inverse"></i>
+      </span>
+      The right keys
+      <span class="fa-stack">
+      　<i class="far fa-stack-2x fa-square"></i>
+      　<i class="fa fa-stack-1x fa-arrow-left"></i>
+      </span>
+      and left keys
+      <span class="fa-stack">
+      　<i class="far fa-stack-2x fa-square"></i>
+      　<i class="fa fa-stack-1x fa-arrow-right"></i>
+      </span>
+      move the slide.
+    </a>
+  </div>
+-->
+
+<!--
+<i class="fas fa-2x fa-keyboard"></i>
+<span class="fa-stack">
+　<i class="far fa-stack-2x fa-square"></i>
+　<i class="fa fa-stack-1x fa-arrow-left"></i>
+</span>
+<span class="fa-stack">
+　<i class="far fa-stack-2x fa-square"></i>
+　<i class="fa fa-stack-1x fa-arrow-right"></i>
+</span>
+
+<span class="fa-stack">
+　<i class="fas fa-stack-2x fa-mobile"></i>
+　<i class="fa fa-stack-1x fa-exchange-alt fa-inverse"></i>
+</span>
+
+（使用例）このフォントの文字コード取得は<strong>
+<span style="color: rgb(0, 144, 255);">
+  <a href="https://fontawesome.com/icons/external-link-alt?style=solid" target="_blank">
+    このページ
+    <i class="fa fa-external-link"></i>
+  </a>
+</span>
+</strong>を参照ください。
+
+  <span class="fa-stack">
+  　<i class="far fa-3x fa-stack-2x fa-hand-point-up"></i>
+  　<i class="fa fa-stack-1x fa-arrow-left"></i>
+  </span>
+  <i class="fas fa-4x fa-mobile"></i>
+  <span class="fa-stack">
+  　<i class="far fa-3x fa-stack-2x fa-hand-point-up"></i>
+  　<i class="fa fa-stack-1x fa-arrow-right"></i>
+</span> -->
+
 </body>
 </html>
