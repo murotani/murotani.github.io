@@ -3,14 +3,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>murotani.github.io</title>
+  <title>TEST TEST TEST</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="viewport" content="width=device-width">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet"> -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
-  <script src="https://kit.fontawesome.com/20a02784da.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/20a02784da.js" crossorigin="anonymous"></script> -->
   <style type="text/css">
     html {
       height: 100%;
@@ -88,17 +86,20 @@
       margin: auto;
     }
     .flame1{
-      border-bottom: 50px solid #fff;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
+      width: 60%;
+      border-bottom: 55px solid #ccc;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
       margin: auto;
     }
+    /*
     .flame2{
         border-top: 30px solid #ddd;
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
         margin: auto;
     }
+    */
     .flame3{
         background:#eee;
         height: 160px;
@@ -126,13 +127,20 @@
       justify-content: center;
       color: #fff;
       font-family: 'Press Start 2P', cursive;
+      box-shadow: inset 0px 0px 40px 5px rgba(0, 0, 0, .5);
     }
-    .btn8bit{
-      transition: .4s;
-      padding: 10px;
+    .playbutton{
+      border-radius:10px;
+      transition: .5s;
+      padding: 10px 20px 10px 20px;
+      color: #fff;
+      background:rgba(0,2555,0,0.6);
+      border: 0px solid #000;
     }
-    .btn8bit:hover {
-      color: #00ff00;
+    .playbutton:hover {
+      color: #000;
+      background-color: #00ff00;
+      border: 0px solid #000;
     }
     .flame4{
       border-bottom: 55px solid #fff;
@@ -147,10 +155,11 @@
 	    height: 25px;
       border-radius: 50%;
       position:absolute;
-      top:  237px;
+      top:  212px;
       bottom:  0;
       left:  68px;
       right:  0;
+      box-shadow: inset 0px -7px 2px 0px rgba(0, 204, 0, .8);
     }
     .joystick2{
       border: 0px solid #000;
@@ -158,7 +167,7 @@
       width: 5px;
 	    height: 20px;
       position:absolute;
-      top:  258px;
+      top:  233px;
       bottom:  0;
       left:  78px;
       right:  0;
@@ -170,7 +179,7 @@
 	    height: 10px;
       border-radius: 50%;
       position:absolute;
-      top:  277px;
+      top:  252px;
       bottom:  0;
       left:  65px;
       right:  0;
@@ -183,13 +192,13 @@
 	    height: 10px;
       border-radius: 50%;
       position:absolute;
-      top:  265px;
+      top:  240px;
       bottom:  0;
       left:  140px;
       right:  0;
     }
     .button1:active{
-      top:  267px;
+      top:  242px;
       box-shadow: 0px 0px 0px #000;
     }
     .button1-ring{
@@ -199,7 +208,7 @@
 	    height: 10px;
       border-radius: 50%;
       position:absolute;
-      top:  269px;
+      top:  244px;
       bottom:  0;
       left:  138px;
       right:  0;
@@ -212,13 +221,13 @@
 	    height: 10px;
       border-radius: 50%;
       position:absolute;
-      top:  260px;
+      top:  235px;
       bottom:  0;
       left:  180px;
       right:  0;
     }
     .button2:active{
-      top:  262px;
+      top:  237px;
       box-shadow: 0px 0px 0px #000;
     }
     .button2-ring{
@@ -228,7 +237,7 @@
       height: 10px;
       border-radius: 50%;
       position:absolute;
-      top:  264px;
+      top:  239px;
       bottom:  0;
       left:  178px;
       right:  0;
@@ -241,13 +250,13 @@
 	    height: 10px;
       border-radius: 50%;
       position:absolute;
-      top:  260px;
+      top:  235px;
       bottom:  0;
       left:  220px;
       right:  0;
     }
     .button3:active{
-      top:  262px;
+      top:  237px;
       box-shadow: 0px 0px 0px #000;
     }
     .button3-ring{
@@ -257,7 +266,7 @@
       height: 10px;
       border-radius: 50%;
       position:absolute;
-      top:  264px;
+      top:  239px;
       bottom:  0;
       left:  218px;
       right:  0;
@@ -270,13 +279,13 @@
 	    height: 10px;
       border-radius: 50%;
       position:absolute;
-      top:  290px;
+      top:  260px;
       bottom:  0;
       left:  140px;
       right:  0;
     }
     .button4:active{
-      top:  292px;
+      top:  262px;
       box-shadow: 0px 0px 0px #000;
     }
     .button4-ring{
@@ -286,7 +295,7 @@
       height: 10px;
       border-radius: 50%;
       position:absolute;
-      top:  294px;
+      top:  264px;
       bottom:  0;
       left:  138px;
       right:  0;
@@ -299,13 +308,13 @@
 	    height: 10px;
       border-radius: 50%;
       position:absolute;
-      top:  285px;
+      top:  255px;
       bottom:  0;
       left:  180px;
       right:  0;
     }
     .button5:active{
-      top:  287px;
+      top:  257px;
       box-shadow: 0px 0px 0px #000;
     }
     .button5-ring{
@@ -315,7 +324,7 @@
       height: 10px;
       border-radius: 50%;
       position:absolute;
-      top:  289px;
+      top:  259px;
       bottom:  0;
       left:  178px;
       right:  0;
@@ -328,13 +337,13 @@
 	    height: 10px;
       border-radius: 50%;
       position:absolute;
-      top:  285px;
+      top:  255px;
       bottom:  0;
       left:  220px;
       right:  0;
     }
     .button6:active{
-      top:  287px;
+      top:  257px;
       box-shadow: 0px 0px 0px #000;
     }
     .button6-ring{
@@ -344,7 +353,7 @@
       height: 10px;
       border-radius: 50%;
       position:absolute;
-      top:  289px;
+      top:  259px;
       bottom:  0;
       left:  218px;
       right:  0;
@@ -356,11 +365,31 @@
       margin: auto;
     }
     .flame6{
-      width: 85%;
-      border-top: 95px solid #ccc;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
+      width: 80%;
+      border-top: 110px solid #ccc;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
       margin: auto;
+    }
+    /*----------------------------
+    * ページネーションのスタイル
+    *----------------------------*/
+    .swiper-pagination {
+        /*display: flex;*/
+    }
+
+    .swiper-pagination-bullet {
+      /*border-radius:0%;*/
+      border: 1px solid #000;
+      /*width: calc(100vw/3)!important;
+      height: calc(100vh/6)!important;
+      line-height: calc(100vh/6);
+      background:#fff!important;*/
+    }
+
+    .swiper-pagination-bullet-active {
+        border: 1px solid #00ff00;
+        background:#00ff00!important;
     }
   </style>
   <!--[if lt IE 9]>
@@ -372,7 +401,7 @@
   <div class="title">
     <!-- murotani.github.io -->
     <!-- <span style="color: #fff;">E</span>LEVATOR<span style="color: #fff;">B</span>OYS<span style="color: #fff;">H</span>OMEWORK -->
-    ELEVATORBOYSHOMEWORK
+    TEST TEST TEST
   </div>
   <div class="parent">
     <div class="flame1">
@@ -389,38 +418,13 @@
                 <!-- Slides -->
                 <!-- <div class="swiper-slide" style="z-index: 1"><a href=""><img src="1.png" alt="" style="height: 140px;width: 220px;"></a></div> -->
                 <!-- slide 1  -->
-                <div class="swiper-slide display">
-                  <!--<div>
-                    <i class="fas fa-desktop fa-2x"></i><br>
-                  </div>
-                  <div style="margin-left: 5px;margin-right: 5px">
-                    <i class="fas fa-arrows-alt-h"></i><br>
-                    <i class="far fa-keyboard"></i>
-                  </div>
-                  <div style="margin-left: 15px;margin-right: 15px">
-                    or
-                  </div>
-                  <div>
-                    <i class="fa fa-mobile fa-2x"></i><br>
-                  </div>
-                  <div style="margin-left: 5px;margin-right: 5px">
-                    <i class="fas fa-arrows-alt-h"></i><br>
-                    <i class="far fa-hand-point-up"></i>
-                  </div>-->
-                </div>
+                <div class="swiper-slide display" style="background-image: url(1.png);background-size: cover;background-repeat: no-repeat;"><a href="" class="playbutton">▶︎</a></div>
                 <!-- slide 2  -->
-                <div class="swiper-slide display"><a href=""></a></div>
+                <div class="swiper-slide display" style="background-image: url(2.png);background-size: cover;background-repeat: no-repeat;"><a href="" class="playbutton">▶︎</a></div>
                 <!-- slide 3  -->
-                <div class="swiper-slide display"><a href=""></a></div>
-                <!-- slide 4  -->
-                <div class="swiper-slide display"><a href=""></a></div>
+                <div class="swiper-slide display" style="background-image: url(3.png);background-size: cover;background-repeat: no-repeat;"><a href="" class="playbutton">▶︎</a></div>
             </div>
-            <!-- If we need pagination -->
             <div class="swiper-pagination swiper-pagination-white"></div>
-
-            <!-- If we need navigation buttons -->
-            <!-- <div class="swiper-button-prev swiper-button-white"></div>
-            <div class="swiper-button-next swiper-button-white"></div> -->
         </div>
 
       </div>
