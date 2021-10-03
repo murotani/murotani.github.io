@@ -1,89 +1,39 @@
-<!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>TEST TEST TEST</title>
+  <title>murotani.github.io</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="viewport" content="width=device-width">
+  <meta name="google" content="notranslate" />
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
-  <!-- <script src="https://kit.fontawesome.com/20a02784da.js" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <style type="text/css">
-    html {
-      height: 100%;
-    }
-    /* PC */
     body{
-      /*background:#505834;*/
-      background: #000133;
+      background: #000;
+      font-family: 'Press Start 2P', cursive;
+      color: #fff;
     }
     a{
       text-decoration: none;
-      color: #fff;
     }
-    .title{
-        text-align: center;
-        color: #000133;
-        font-family: 'Press Start 2P', cursive;
-        /*font-family: 'Monoton', cursive;*/
-        /*font-family: 'Allerta Stencil', sans-serif;*/
-        margin: auto;
-        /*font-size: 350%;*/
-        font-size: 300%;
-        /*text-shadow:
-          1px 1px 1px #000,
-          1px -1px 1px #000,
-          -1px 1px 1px #000,
-          -1px -1px 1px #000,
-          0 0 20px #000;*/
-        padding : 120px 0px 90px 0px;
-        text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
-              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
-              0px 1px 0 #FFF,  0-1px 0 #FFF,
-              -1px 0 0 #FFF, 1px 0 0 #FFF;
-
+    iframe{
+      width: 100%;
+      height: auto;
     }
-    /* タブレット縦 */
-    @media screen and (max-width: 1024px) {
-      .title{
-        /*font-size: 200%;*/
-        font-size: 190%;
-        /*text-shadow:
-          1px 1px 1px #505834,
-          1px -1px 1px #505834,
-          -1px 1px 1px #505834,
-          -1px -1px 1px #505834,
-          0 0 30px #000;*/
-        padding : 90px 0px 70px 0px;
-      }
+    p{
+      text-align: center;
     }
-    /* スマホ横 */
-    @media screen and (max-width: 896px) {
-      .title{
-        /*font-size: 150%;*/
-        font-size: 140%;
-        /*text-shadow:
-          1px 1px 1px #505834,
-          1px -1px 1px #505834,
-          -1px 1px 1px #505834,
-          -1px -1px 1px #505834,
-          0 0 10px #000;*/
-        padding : 35px 0px 35px 0px;
-      }
+    .container {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
     }
-    /* スマホ縦 */
-    @media screen and (max-width: 480px) {
-      .title{
-        /* font-size: 100%; */
-        font-size: 85%;
-      }
-    }
-    .parent{
-      position: relative;
-      height: 450px;
+    .box {
       width: 300px;
-      margin: auto;
+      height: 530px;
     }
     .flame1{
       width: 60%;
@@ -92,42 +42,16 @@
       border-right: 40px solid transparent;
       margin: auto;
     }
-    /*
     .flame2{
-        border-top: 30px solid #ddd;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
+        background:#000;
+        border: solid #fff 10px;
+        width: 240px;
+        height: 150px;
         margin: auto;
     }
-    */
-    .flame3{
-        background:#eee;
-        height: 160px;
-        width: 260px;
-        padding-top: 20px;
-        margin: auto;
-    }
-    /*
-    .screen{
-        background:#00ff00;
-        border-radius: 10px;
-        height: 140px;
-        width: 220px;
-        margin: auto;
-    }
-    */
-    .display{
-      z-index: 1;
-      background: #000;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-align-items: center;
-      align-items: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      color: #fff;
-      font-family: 'Press Start 2P', cursive;
-      box-shadow: inset 0px 0px 40px 5px rgba(0, 0, 0, .5);
+    .flame2 p {
+      /*上下センタリングするもの*/
+      line-height: 130px;
     }
     .playbutton{
       border-radius:10px;
@@ -142,424 +66,279 @@
       background-color: #00ff00;
       border: 0px solid #000;
     }
-    .flame4{
+    .flame3{
       border-bottom: 55px solid #fff;
       border-left: 20px solid transparent;
       border-right: 20px solid transparent;
       margin: auto;
     }
     .joystick1{
-      border: 0px solid #000;
+      position: relative; top:-80px; left:75px;
       background: #00ff00;
       width: 25px;
 	    height: 25px;
       border-radius: 50%;
-      position:absolute;
-      top:  212px;
-      bottom:  0;
-      left:  68px;
-      right:  0;
       box-shadow: inset 0px -7px 2px 0px rgba(0, 204, 0, .8);
     }
     .joystick2{
-      border: 0px solid #000;
+      position: relative; top:-97px; left:85px;
       background: #000;
       width: 5px;
 	    height: 20px;
-      position:absolute;
-      top:  233px;
-      bottom:  0;
-      left:  78px;
-      right:  0;
     }
     .joystick3{
+      position: relative; top:-65px; left:72px;
       border: 3px solid #000;
       background: #000;
       width: 25px;
 	    height: 10px;
       border-radius: 50%;
-      position:absolute;
-      top:  252px;
-      bottom:  0;
-      left:  65px;
-      right:  0;
     }
     .button1{
+      position: relative; top:-108px; left:150px;
       border: 0px solid #000;
       background: #00ff00;
       box-shadow: 0px 2px 0px #00cc00;
       width: 25px;
 	    height: 10px;
       border-radius: 50%;
-      position:absolute;
-      top:  240px;
-      bottom:  0;
-      left:  140px;
-      right:  0;
     }
     .button1:active{
-      top:  242px;
+      position: relative; top:-107px; left:150px;
       box-shadow: 0px 0px 0px #000;
     }
     .button1-ring{
+      position: relative; top:-113px; left:148px;
       border: 0px solid #000;
       background: #00ff00;
       width: 29px;
 	    height: 10px;
       border-radius: 50%;
-      position:absolute;
-      top:  244px;
-      bottom:  0;
-      left:  138px;
-      right:  0;
     }
     .button2{
+      position: relative; top:-133px; left:190px;
       border: 0px solid #000;
       background: #00ff00;
       box-shadow: 0px 2px 0px #00cc00;
       width: 25px;
 	    height: 10px;
       border-radius: 50%;
-      position:absolute;
-      top:  235px;
-      bottom:  0;
-      left:  180px;
-      right:  0;
     }
     .button2:active{
-      top:  237px;
+      position: relative; top:-132px; left:190px;
       box-shadow: 0px 0px 0px #000;
     }
     .button2-ring{
+      position: relative; top:-138px; left:188px;
       border: 0px solid #000;
       background: #00ff00;
       width: 29px;
-      height: 10px;
+	    height: 10px;
       border-radius: 50%;
-      position:absolute;
-      top:  239px;
-      bottom:  0;
-      left:  178px;
-      right:  0;
     }
     .button3{
+      position: relative; top:-153px; left:230px;
       border: 0px solid #000;
       background: #00ff00;
       box-shadow: 0px 2px 0px #00cc00;
       width: 25px;
 	    height: 10px;
       border-radius: 50%;
-      position:absolute;
-      top:  235px;
-      bottom:  0;
-      left:  220px;
-      right:  0;
     }
     .button3:active{
-      top:  237px;
+      position: relative; top:-152px; left:230px;
       box-shadow: 0px 0px 0px #000;
     }
     .button3-ring{
+      position: relative; top:-158px; left:228px;
       border: 0px solid #000;
       background: #00ff00;
       width: 29px;
-      height: 10px;
+	    height: 10px;
       border-radius: 50%;
-      position:absolute;
-      top:  239px;
-      bottom:  0;
-      left:  218px;
-      right:  0;
     }
     .button4{
+      position: relative; top:-148px; left:150px;
       border: 0px solid #000;
       background: #00ff00;
       box-shadow: 0px 2px 0px #00cc00;
       width: 25px;
-	    height: 10px;
+      height: 10px;
       border-radius: 50%;
-      position:absolute;
-      top:  260px;
-      bottom:  0;
-      left:  140px;
-      right:  0;
     }
     .button4:active{
-      top:  262px;
+      position: relative; top:-147px; left:150px;
       box-shadow: 0px 0px 0px #000;
     }
     .button4-ring{
+      position: relative; top:-153px; left:148px;
       border: 0px solid #000;
       background: #00ff00;
       width: 29px;
-      height: 10px;
+	    height: 10px;
       border-radius: 50%;
-      position:absolute;
-      top:  264px;
-      bottom:  0;
-      left:  138px;
-      right:  0;
     }
     .button5{
+      position: relative; top:-173px; left:190px;
       border: 0px solid #000;
       background: #00ff00;
       box-shadow: 0px 2px 0px #00cc00;
       width: 25px;
 	    height: 10px;
       border-radius: 50%;
-      position:absolute;
-      top:  255px;
-      bottom:  0;
-      left:  180px;
-      right:  0;
     }
     .button5:active{
-      top:  257px;
+      position: relative; top:-172px; left:190px;
       box-shadow: 0px 0px 0px #000;
     }
     .button5-ring{
+      position: relative; top:-178px; left:188px;
       border: 0px solid #000;
       background: #00ff00;
       width: 29px;
-      height: 10px;
+	    height: 10px;
       border-radius: 50%;
-      position:absolute;
-      top:  259px;
-      bottom:  0;
-      left:  178px;
-      right:  0;
     }
     .button6{
+      position: relative; top:-192px; left:230px;
       border: 0px solid #000;
       background: #00ff00;
       box-shadow: 0px 2px 0px #00cc00;
       width: 25px;
 	    height: 10px;
       border-radius: 50%;
-      position:absolute;
-      top:  255px;
-      bottom:  0;
-      left:  220px;
-      right:  0;
     }
     .button6:active{
-      top:  257px;
+      position: relative; top:-191px; left:230px;
       box-shadow: 0px 0px 0px #000;
     }
     .button6-ring{
+      position: relative; top:-197px; left:228px;
       border: 0px solid #000;
       background: #00ff00;
       width: 29px;
-      height: 10px;
+	    height: 10px;
       border-radius: 50%;
-      position:absolute;
-      top:  259px;
-      bottom:  0;
-      left:  218px;
-      right:  0;
     }
-    .flame5{
+    .flame4{
       border-top: 50px solid #ddd;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
-      margin: auto;
+      margin-top: -181px;
     }
-    .flame6{
+    .flame5{
       width: 80%;
-      border-top: 110px solid #ccc;
+      border-top: 130px solid #ccc;
       border-left: 7px solid transparent;
       border-right: 7px solid transparent;
       margin: auto;
     }
-    /*----------------------------
-    * ページネーションのスタイル
-    *----------------------------*/
     .swiper-pagination {
-        /*display: flex;*/
+        display: flex;
     }
-
     .swiper-pagination-bullet {
-      /*border-radius:0%;*/
+      border-radius:0%;
       border: 1px solid #000;
-      /*width: calc(100vw/3)!important;
-      height: calc(100vh/6)!important;
+      width: calc(100vw/3)!important;
+      height: calc(100vh/65)!important;
       line-height: calc(100vh/6);
-      background:#fff!important;*/
+      background:#fff!important;
     }
-
+    .swiper-pagination-bullet:hover {
+      border: solid 1px #fff!important;
+      background:#000!important;
+    }
     .swiper-pagination-bullet-active {
-        border: 1px solid #00ff00;
-        background:#00ff00!important;
+      background:#fff!important;
+    }
+    .flash {
+      animation: flash .03s infinite;
+    }
+    @keyframes flash {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: .8;
+      }
     }
   </style>
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
 </head>
 <body>
-  <script src="js/scripts.js"></script>
-  <div class="title">
-    <!-- murotani.github.io -->
-    <!-- <span style="color: #fff;">E</span>LEVATOR<span style="color: #fff;">B</span>OYS<span style="color: #fff;">H</span>OMEWORK -->
-    TEST TEST TEST
-  </div>
-  <div class="parent">
-    <div class="flame1">
-    </div>
-    <div class="flame2">
-    </div>
-    <div class="flame3" style="z-index: 5">
-      <div class="screen" style="z-index: 4">
-
+  <div class="container">
+    <div class="box">
+      <div class="flame1"></div>
+      <div class="flame2">
         <!-- Slider main container -->
-        <div class="swiper-container" style="height: 140px;width: 220px;z-index: 3;border-radius: 10px;">
+        <div class="swiper mySwiper" style="width: 240px;height: 460px;z-index: 3;">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper" data-swiper-autoplay="2000" style="z-index: 2">
-                <!-- Slides -->
-                <!-- <div class="swiper-slide" style="z-index: 1"><a href=""><img src="1.png" alt="" style="height: 140px;width: 220px;"></a></div> -->
+            <div class="swiper-wrapper" data-swiper-autoplay="" style="z-index: 2">
                 <!-- slide 1  -->
-                <div class="swiper-slide display" style="background-image: url(1.png);background-size: cover;background-repeat: no-repeat;"><a href="" class="playbutton">▶︎</a></div>
+                <div class="swiper-slide flash">
+                  <p style="font-size: 70%;">murotani.github.io</p>
+                </div>
                 <!-- slide 2  -->
-                <div class="swiper-slide display" style="background-image: url(2.png);background-size: cover;background-repeat: no-repeat;"><a href="" class="playbutton">▶︎</a></div>
+                <div class="swiper-slide">
+                  <iframe src="https://www.youtube.com/embed/5oIUAb5wOyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <!-- slide 3  -->
-                <div class="swiper-slide display" style="background-image: url(3.png);background-size: cover;background-repeat: no-repeat;"><a href="" class="playbutton">▶︎</a></div>
+                <div class="swiper-slide">
+                  <iframe src="https://www.youtube.com/embed/5oIUAb5wOyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- slide 4  -->
+                <div class="swiper-slide">
+                  <iframe src="https://www.youtube.com/embed/5oIUAb5wOyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="swiper-pagination swiper-pagination-white"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next" id="swiperbuttonnext" style="display:none;"></div>
         </div>
-
       </div>
-    </div>
-    <div class="flame4" style="z-index: 6">
-       <div class="joystick1" style="z-index: 9">
-       </div>
-       <div class="joystick3" style="z-index: 8">
-       </div>
-       <div class="joystick2" style="z-index: 7">
-       </div>
-       <div class="button1" style="z-index: 11">
-       </div>
-       <div class="button1-ring" style="z-index: 1">
-       </div>
-       <div class="button2" style="z-index: 12">
-       </div>
-       <div class="button2-ring" style="z-index: 2">
-       </div>
-       <div class="button3" style="z-index: 13">
-       </div>
-       <div class="button3-ring" style="z-index: 3">
-       </div>
-       <div class="button4" style="z-index: 14">
-       </div>
-       <div class="button4-ring" style="z-index: 4">
-       </div>
-       <div class="button5" style="z-index: 15">
-       </div>
-       <div class="button5-ring" style="z-index: 5">
-       </div>
-       <div class="button6" style="z-index: 16">
-       </div>
-       <div class="button6-ring" style="z-index: 6">
-       </div>
-    </div>
-    <div class="flame5">
-    </div>
-    <div class="flame6">
+      <div class="flame3"></div>
+        <div class="joystick1" style="z-index: 9"></div>
+        <div class="joystick3" style="z-index: 8"></div>
+        <div class="joystick2" style="z-index: 7"></div>
+        <div class="button1" style="z-index: 11" onclick= ButtonClick()></div>
+        <div class="button1-ring" style="z-index: 1"></div>
+        <div class="button2" style="z-index: 12" onclick= ButtonClick()></div>
+        <div class="button2-ring" style="z-index: 2"></div>
+        <div class="button3" style="z-index: 13" onclick= ButtonClick()></div>
+        <div class="button3-ring" style="z-index: 3"></div>
+        <div class="button4" style="z-index: 14" onclick= ButtonClick()></div>
+        <div class="button4-ring" style="z-index: 4"></div>
+        <div class="button5" style="z-index: 15" onclick= ButtonClick()></div>
+        <div class="button5-ring" style="z-index: 5"></div>
+        <div class="button6" style="z-index: 16" onclick= ButtonClick()></div>
+        <div class="button6-ring" style="z-index: 6"></div>
+      <div class="flame4"></div>
+      <div class="flame5"></div>
     </div>
   </div>
-  </div>
-  <!-- Slider -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-	<script>
-		var mySwiper = new Swiper ('.swiper-container', {
-			effect: "slide",
-	    	loop: true,
-        keyboardControl: true,
-        mousewheelControl: true,
-        autoplay: 5000,
-		    pagination: '.swiper-pagination',
-		    //nextButton: '.swiper-button-next',
-		    //prevButton: '.swiper-button-prev',
-	    })
-	</script>
-
-<!--
-  <div>
-    <a href="" target="_blank">
-      On desktop PCs,
-      <span class="fa-stack">
-      　<i class="far fa-stack-2x fa-square"></i>
-      　<i class="fa fa-stack-1x fa-desktop fa-inverse"></i>
-      </span>
-      The right keys
-      <span class="fa-stack">
-      　<i class="far fa-stack-2x fa-square"></i>
-      　<i class="fa fa-stack-1x fa-arrow-left"></i>
-      </span>
-      and left keys
-      <span class="fa-stack">
-      　<i class="far fa-stack-2x fa-square"></i>
-      　<i class="fa fa-stack-1x fa-arrow-right"></i>
-      </span>
-      move the slide.
-    </a>
-  </div>
-
-  <div>
-    <a href="" target="_blank">
-      On smartphones,
-      <span class="fa-stack">
-      　<i class="far fa-stack-2x fa-square"></i>
-      　<i class="fa fa-stack-1x fa-mobile fa-inverse"></i>
-      </span>
-      The right keys
-      <span class="fa-stack">
-      　<i class="far fa-stack-2x fa-square"></i>
-      　<i class="fa fa-stack-1x fa-arrow-left"></i>
-      </span>
-      and left keys
-      <span class="fa-stack">
-      　<i class="far fa-stack-2x fa-square"></i>
-      　<i class="fa fa-stack-1x fa-arrow-right"></i>
-      </span>
-      move the slide.
-    </a>
-  </div>
--->
-
-<!--
-<i class="fas fa-2x fa-keyboard"></i>
-<span class="fa-stack">
-　<i class="far fa-stack-2x fa-square"></i>
-　<i class="fa fa-stack-1x fa-arrow-left"></i>
-</span>
-<span class="fa-stack">
-　<i class="far fa-stack-2x fa-square"></i>
-　<i class="fa fa-stack-1x fa-arrow-right"></i>
-</span>
-
-<span class="fa-stack">
-　<i class="fas fa-stack-2x fa-mobile"></i>
-　<i class="fa fa-stack-1x fa-exchange-alt fa-inverse"></i>
-</span>
-
-（使用例）このフォントの文字コード取得は<strong>
-<span style="color: rgb(0, 144, 255);">
-  <a href="https://fontawesome.com/icons/external-link-alt?style=solid" target="_blank">
-    このページ
-    <i class="fa fa-external-link"></i>
-  </a>
-</span>
-</strong>を参照ください。
-
-  <span class="fa-stack">
-  　<i class="far fa-3x fa-stack-2x fa-hand-point-up"></i>
-  　<i class="fa fa-stack-1x fa-arrow-left"></i>
-  </span>
-  <i class="fas fa-4x fa-mobile"></i>
-  <span class="fa-stack">
-  　<i class="far fa-3x fa-stack-2x fa-hand-point-up"></i>
-  　<i class="fa fa-stack-1x fa-arrow-right"></i>
-</span> -->
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script type="text/javascript">
+    function ButtonClick()
+    {
+      var element = document.getElementById("swiperbuttonnext");
+      element.click();
+    }
+  </script>
 </body>
 </html>
